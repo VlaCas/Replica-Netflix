@@ -1,0 +1,853 @@
+*
+    margin: 0
+    padding: 0
+
+@font-face 
+    font-family: NetflixSansIcon
+    src: url(Netflix-Sans/NetflixSansIcon.ttf)
+
+@font-face 
+    font-family: NetflixSansMedium
+    src: url(Netflix-Sans/NetflixSansMedium.ttf)
+
+@font-face 
+    font-family: NetflixSansRegular
+    src: url(Netflix-Sans/NetflixSansRegular.ttf)
+
+.primera-seccion
+ 
+    //Estilo Header
+    nav
+        
+        max-width: 1920px
+        margin: 0 auto
+        box-sizing: border-box
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 28px 56px 0 56px
+        position: relative
+        z-index: 20
+
+        #netflix-logo
+            width: 167px
+
+        #contenedor-botones
+            display: flex
+            flex-direction: row
+            width: 259px
+            gap: 32px
+
+        #boton-idiomas
+            background-color: rgba(0, 0, 0, 0.4)
+            width: 98px
+            height: 36px
+            font-family: NetflixSansRegular
+            font-size: 14px
+            color: rgb(255, 255, 255)
+            border: 1px solid rgb(170, 170, 170)
+            border-radius: 2px 2px 2px 2px
+            margin-top: -9px
+            position: relative
+        
+        #boton-idiomas::before
+            content: "\e896"  
+            font-family: NetflixSansIcon
+            color: rgb(255, 255, 255)
+            font-size: 12px
+            position: absolute
+            top: 30%
+            left: 8%
+
+        #boton-idiomas::after
+            content: "\e898"  
+            font-family: NetflixSansIcon
+            color: rgb(255, 255, 255)
+            font-size: 6px
+            position: absolute
+            top: 40%
+            left: 81%
+            
+        #boton-inicio-sesion
+            background-color: rgb(229, 9, 20) 
+            cursor: pointer
+            width: 128.8px
+            height: 34px
+            font-family: NetflixSansRegular
+            font-size: 1rem
+            font-weight: 400px
+            color: rgb(255, 255, 255)
+            border: 1px solid rgb(229, 9, 20) 
+            border-radius: 3px 3px 3px 3px   
+            margin-top: -9px
+    
+    //Efectos de Imagen de Fondo
+    &::before
+
+        content: ""
+        position: absolute
+        height: 100%
+        width: 100%
+        background: rgba(0,0,0,0.4)
+        background-image: linear-gradient(1deg,rgba(0,0,0,0.9) 0, transparent 60%,rgba(0,0,0,0.82)) 
+        z-index: 10
+        box-sizing: border-box
+
+    //Estilo Imagen de Fondo
+    background-image: url(Imagenes/fondo-netflix2.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+
+    .contenedor-contenido-central
+        
+        box-sizing: border-box
+        width: 100%
+        height: 100vh
+        max-height: 668px
+        padding: 98px 45px
+        border-bottom: 8px solid #222  
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        z-index: 20
+
+        .contenido-central
+
+            display: flex
+            flex-direction: column
+            color: rgb(255, 255, 255)
+            justify-content: center
+            align-items: center
+            padding: 80px 0
+            margin: 0 auto
+            width: 100%
+            
+            h1
+                display: block
+                font-family: NetflixSansMedium
+                font-size: 64px
+                font-weight: 400
+                line-height: 1.1
+                margin: 0 auto
+                max-width: 800px
+                text-align: center
+
+            h2
+                font-family: NetflixSansRegular
+                font-size: 26px
+                font-weight: normal
+                text-align: center
+                line-height: 1.4
+                margin: 16px 75px
+
+            h3
+                font-family: NetflixSansRegular
+                font-size: 19.2px
+                font-weight: normal
+                text-align: center
+                padding: 0 47px 20px
+
+            input
+                font-family: NetflixSansRegular
+                width: 100%
+                max-width: 487px
+                height: 66px
+                font-size: 16px
+                padding-left: 10px
+
+            
+            input:focus 
+                outline: none
+                border: 1.8px solid #1c62b9
+
+            button
+                font-family: NetflixSansRegular
+                background-color: rgb(229, 9, 20) 
+                color: rgb(255, 255, 255)
+                border: none
+                width: 226px
+                height: 70px
+                font-size: 30px
+                line-height: 0.5 
+
+            button:hover
+                background-color: rgb(244,6,18)
+                cursor: pointer          
+        
+            #h3-input-boton
+                display: flex
+                flex-direction: column
+                justify-content: center                
+                padding-top: 14px
+            
+            #input-boton
+                display: flex
+                flex-direction: row
+                justify-content: center
+
+.segunda-seccion
+    background-color: rgb(0, 0, 0)
+    color: rgb(255, 255, 255)
+    border-bottom: 8px solid #222
+    padding: 70px 45px
+
+    .contenedor-padre
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-width: 1100px
+        margin: 0 auto
+
+        #contenedor-texto
+            flex: 0 1 auto
+            width: 51.5%
+            height: 100%
+            padding: 0 3rem 0 0
+
+            h1
+                font-family: NetflixSansMedium
+                font-size: 3.125rem
+                line-height: 1.1
+                margin-bottom: 0.5rem
+                font-weight: 400
+
+            h2
+                font-family: NetflixSansRegular
+                font-size: 1.625rem
+                font-weight: 400
+                margin: 0.75em 0 0.25em
+
+        .contenedor-animacion
+            box-sizing: border-box
+            display: flex
+            flex: 0 1 auto
+            width: 48.5%
+            height: 100%
+
+            .contenedor-animacion2
+                position: relative  
+                width: 100%
+                margin: -10% -5% -5% 0
+
+                img
+                    position: relative
+                    border: 0
+                    height: auto
+                    max-width: 100%
+                    overflow-clip-margin: content-box
+                    overflow: clip
+                    z-index: 2
+                
+                .contenedor-video
+                    height: 100%
+                    left: 49.5%
+                    max-height: 54.2%
+                    max-width: 74.8%
+                    position: absolute
+                    top: 47.7%
+                    transform: translate(-50%,-50%)
+                    width: 100% 
+
+                    video
+                        position: relative
+                        height: 100%
+                        width: 100%
+                        display: inline-block
+                        vertical-align: baseline
+                        object-fit: contain
+                        overflow-clip-margin: content-box
+                        overflow: clip
+                        z-index: 1
+                        
+                        
+
+.tercera-seccion
+
+    background-color: rgb(0, 0, 0)
+    box-sizing: border-box
+    width: 100%
+    height: 100vh
+    max-height: 465px
+    border-bottom: 8px solid #222
+    padding: 70px 45px
+
+    .contenedor-padre2
+
+        display: flex
+        flex-direction: row
+        justify-content: center
+        background-color: rgb(0, 0, 0)
+        width: 100%
+        height: 100%
+        max-height: 322.12px
+
+        #contenedor-imagen
+
+            position: relative
+            width: 550px
+            
+            img
+                position: absolute
+                top: -36px
+                left: -76px
+            
+            .fila-descarga
+                background-color: #000
+                display: flex
+                flex-direction: row
+                position: absolute
+                top: 211px
+                left: 11px
+                width: 327px
+                height: 100px
+                border: 2px solid hsla(0,0%,100%,.25)
+                border-radius: 12px
+                box-shadow: 0 0 2em 0 #000
+
+                #imagen-boxshot
+                    position: absolute
+                    top: 0
+                    left: 0
+                    padding: 8px 0 8px 12px
+                
+                #p1
+                    font-family: NetflixSansMedium
+                    color: rgb(255, 255, 255)
+                    font-style: 16px
+                    font-weight: normal
+
+                #p2
+                    font-family: NetflixSansRegular
+                    color: rgb(0, 113, 235)
+                    font-size: 14px
+                    font-weight: normal
+                
+                #texto-descarga
+                    position: absolute
+                    top: 30px
+                    left: 85px
+
+                #icono-descarga
+                    position: absolute
+                    top: 25px
+                    left: 267px
+
+        #contenedor-texto2
+
+            display: flex
+            flex-direction: column
+            justify-content: center
+            width: 550px
+
+            h1
+                color: rgb(255, 255, 255)
+                font-family: NetflixSansMedium
+                align-self: start
+                font-size: 50px
+                font-weight: normal
+                line-height: 55px
+                margin-bottom: 6px
+                padding-left: 2px
+            
+            h2
+                font-family: NetflixSansRegular
+                color: rgb(255, 255, 255)
+                align-self: start
+                font-size: 26px
+                font-weight: normal
+                margin: 15px 0 6.5px 0
+                padding-left: 2px
+
+.cuarta-seccion
+
+    background-color: rgb(0, 0, 0)
+    box-sizing: border-box
+    width: 100%
+    height: 100vh
+    max-height: 538px
+    border-bottom: 8px solid #222
+    padding: 70px 45px
+
+    .contenedor-padre3
+
+        display: flex
+        flex-direction: row
+        justify-content: center
+        background-color: rgb(0, 0, 0)
+        width: 100%
+        height: 100%
+        max-height: 395px
+        
+        #contenedor-texto3
+
+            display: flex
+            flex-direction: column
+            justify-content: center
+            width: 100%
+            max-width: 550px
+
+            h1
+                color: rgb(255, 255, 255)
+                font-family: NetflixSansMedium
+                font-size: 50px
+                font-weight: normal
+                line-height: 53px
+                margin-bottom: 6px
+            
+            h2
+                font-family: NetflixSansRegular
+                color: rgb(255, 255, 255)
+                font-size: 26px
+                font-weight: normal
+                margin: 15px 0 6.5px 0
+
+        #contenedor-video2
+
+            position: relative
+            width: 100%
+            max-width: 550px
+
+            video
+                position: absolute
+                top: 22px
+                left: 140px
+
+            img
+                position: absolute
+                top: -25px
+                left: 45px  
+
+.quinta-seccion
+
+    background-color: rgb(0, 0, 0)
+    box-sizing: border-box
+    width: 100%
+    height: 100vh
+    max-height: 530px
+    border-bottom: 8px solid #222
+    padding: 70px 45px
+    
+    .contenedor-padre4
+
+        display: flex
+        flex-direction: row
+        justify-content: center 
+        background-color: rgb(0, 0, 0)
+        width: 100%
+        height: 100%
+
+
+        #contenedor-imagen2
+
+            position: relative
+            width: 50%
+            max-width: 505px
+            margin-left: auto
+
+            img
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+      
+        #contenedor-texto4
+
+            display: flex
+            flex-direction: column
+            justify-content: center
+            width: 50%
+            max-width: 550px
+            margin-right: auto
+            padding-left: 47px
+
+            h1
+                color: rgb(255, 255, 255)
+                font-family: NetflixSansMedium
+                align-self: flex-start
+                font-size: 50px
+                font-weight: normal
+                line-height: 55px
+                padding: 0 0 4px 2px
+            
+            h2
+                font-family: NetflixSansRegular
+                color: rgb(255, 255, 255)
+                align-self: flex-start
+                font-size: 26px
+                font-weight: normal
+                margin: 17px 0 6.5px 0
+                padding-left: 2px
+
+.sexta-seccion
+
+    background-color: rgb(0, 0, 0)
+    width: 100%
+    height: 930.12px
+    border-bottom: 8px solid #222
+
+    .contenedor-padre5
+
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 50px 45px
+
+        h1
+            color: rgb(255, 255, 255)
+            font-family: NetflixSansMedium
+            font-size: 50px
+            font-weight: normal
+            line-height: 1.1
+            margin: 20px 0  50px 0
+            text-align: center
+        
+        button
+
+            display: block
+            background-color: rgb(48, 48, 48)
+            color: rgb(255, 255, 255)
+            font-family: NetflixSansRegular
+            font-size: 26px
+            font-weight: normal
+            cursor: pointer
+            padding: 21px 30.80px
+            width: 819px
+            text-align: start
+            margin-bottom: 9px
+            border: none
+
+        h3
+            color: rgb(255, 255, 255)
+            font-family: NetflixSansRegular
+            font-size: 19.2px
+            font-weight: normal
+            text-align: center
+            padding-bottom: 20px
+            margin-top: 60px
+
+        #input-boton2
+            display: flex
+            flex-direction: row
+
+        input
+            font-family: NetflixSansRegular
+            width: 487px
+            height: 66px
+            font-size: 16px
+            padding-left: 10px 
+        
+        input:focus 
+            outline: none
+            border: 1.8px solid #1c62b9
+
+        #boton1
+
+            font-family: NetflixSansRegular
+            background-color: rgb(229, 9, 20) 
+            color: rgb(255, 255, 255)
+            border: none
+            width: 228px
+            height: 70px
+            font-size: 30px
+            line-height: 0.5 
+
+        #boton1 :hover
+            background-color: rgb(244,6,18)
+            cursor: pointer 
+
+@mixin estilo-links-footer ()
+    display: inline-block
+    font-family: NetflixSansRegular
+    color: rgb(115, 115, 115)
+    font-size: 13px
+    text-align: left
+    text-justify: left
+    text-size-adjust: 100%
+    vertical-align: top
+    margin-bottom: 16px
+    min-width: 100px
+    width: 200px
+    padding-right: 22px
+
+    a 
+        font-family: NetflixSansRegular
+        color: rgb(115, 115, 115) 
+        text-decoration: none
+
+    a:hover
+        text-decoration: underline  
+
+.septima-seccion
+
+    background-color: rgb(0, 0, 0)
+    width: 100%
+    height: 394px
+    display: flex
+    justify-content: center
+
+    .contenedor-padre6
+
+        background-color: rgb(0, 0, 0)
+        width: 900px
+        margin: 0 auto
+        max-width: 1000px
+        padding: 70px 45px 0 45px
+
+        #p-footer-top
+            font-family: NetflixSansRegular
+            color: rgb(115, 115, 115)
+            font-size: 16px
+            margin-bottom: 30px
+
+        #a-footer-top
+            color: rgb(115, 115, 115)
+            text-decoration: none
+            text-decoration-color: rgb(115, 115, 115)
+            text-decoration-style: solid
+            text-decoration-thickness: auto
+
+        #a-footer-top:hover
+            text-decoration: underline  
+
+        
+        .link-lista-footer
+            @include estilo-links-footer
+        
+        #contenedor-boton-idioma
+            margin-top: 20px
+        
+        button
+            position: relative
+            background-color: rgba(0, 0, 0, 0.4)
+            width: 137px
+            height: 53.19px
+            font-family: NetflixSansRegular
+            font-size: 16px
+            font-weight: 300px
+            color: rgb(153, 153, 153)
+            border: 1px solid rgb(51, 51, 51)
+            border-radius: 2px 2px 2px 2px
+
+        button::before
+            content: "\e896"  
+            font-family: NetflixSansIcon
+            color: rgb(153, 153, 153)
+            font-size: 16px
+            position: absolute
+            top: 31%
+            left: 10.5%
+
+        button::after
+            content: "\e898"  
+            font-family: NetflixSansIcon
+            color: rgb(153, 153, 153)
+            font-size: 6px
+            position: absolute
+            top: 41%
+            left: 86.5%
+
+        #p-footer-bottom
+            font-family: NetflixSansRegular
+            color: rgb(115, 115, 115)
+            font-size: 13px
+            margin: 24px 0 13px
+
+/* RESPONSIVE */   
+
+// /* Dispositivos Extra Pequeños (Celulares, 600px y menos) */
+// @media only screen and (max-width: 600px) 
+
+
+// /* Dispositivos Pequeños (Tabletas Portatiles y Celulares Grandes, 600px y más) */
+// @media only screen and (min-width: 600px)    
+
+
+// /* Dispositivos Medianos (Tabletas Grandes, 768px y más) */
+// @media only screen and (min-width: 768px) 
+
+
+// /* Dispositivos Grandes (Laptops/Pc`s de Escritorio, 992px y más) */
+// @media only screen and (min-width: 1280px)     
+
+/* Dispositivos Extra Grandes (Laptops Grandes/Pc`s de Escritorio Grandes, 1200px y más) */
+// @media only screen and (max-width: 1330px) 
+//     .primera-seccion
+//         background-position-y: -8px
+//         nav
+//             #netflix-logo
+//                 width: 134px
+//             #boton-idiomas
+//                 margin-top: 0
+//             #boton-inicio-sesion
+//                 margin-top: 0
+//         .contenedor-contenido-central
+//             max-height: 621px
+//             .contenido-central
+//                 h1
+//                     font-size: 50px
+//                     margin: 0 auto
+//                     max-width: 640px
+//                 input
+//                     width: 436px
+//                     height: 58px
+//                 button
+//                     width: 198px
+//                     height: 61px
+//                     font-size: 26px
+    
+//     .segunda-seccion
+//         .contenedor-padre
+//             #contenedor-video
+
+//                 video
+//                     transform: translate(-3.4%, 5.2%)
+//                 img
+//                     transform: translate(-4.2%, 10%)
+
+@media only screen and (max-width: 1449px) 
+    .primera-seccion
+        nav
+            #netflix-logo
+                width: 134px
+            #boton-idiomas
+                margin-top: 0px
+            #boton-inicio-sesion
+                margin-top: 0px
+        .contenedor-contenido-central
+            max-height: 621px
+            .contenido-central
+                h1
+                    font-size: 50px
+                    margin: 0 auto
+                    max-width: 640px
+                input
+                    width: 436px
+                    height: 58px
+                
+                button
+                    width: 198px
+                    height: 61px
+                    font-size: 26px
+
+@media only screen and (max-width: 1052px) 
+    .primera-seccion
+        .contenedor-contenido-central
+            max-height: 645px
+
+@media only screen and (max-width: 949px) 
+    .primera-seccion
+        nav
+            padding: 28px 0 0
+            margin: 0 45px
+            #boton-idiomas
+                position: relative
+                left: 3.2%
+
+            #netflix-logo
+                width: 108px
+        .contenedor-contenido-central
+            max-height: 689px
+            .contenido-central
+                h3
+                    font-size: 23px
+                    padding: 0 12%
+                    margin: 0 10%
+                
+                h2
+                    margin: 16px 10px
+                    
+                #h3-input-boton
+                    padding: 0px
+                #input-boton
+                    flex-direction: column
+                    align-items: center
+                input
+                    margin: 10px 0 15px
+                    width: 486px
+                    height: 55px
+                button
+                    width: 122px
+                    height: 41px
+                    font-size: 16px
+
+@media only screen and (max-width: 739px) 
+    .primera-seccion
+        .contenedor-contenido-central
+            max-height: 636px
+            .contenido-central
+                h3
+                    font-size: 18px
+                    padding: 0 1px
+                h2
+                    margin: 16px 0px                          
+                input
+                    width: 488px
+                    height: 44px
+    
+@media only screen and (max-width: 679px) 
+    .primera-seccion
+        .contenedor-contenido-central
+            max-height: 669px
+
+@media only screen and (max-width: 646px) 
+    .primera-seccion
+        .contenedor-contenido-central
+            max-height: 724px
+
+@media only screen and (max-width: 625px) 
+    .primera-seccion
+        .contenedor-contenido-central
+            max-height: 747px
+
+@media only screen and (max-width: 549px) 
+    .primera-seccion
+        nav
+            padding: 26px 0 0
+            margin: 0 27px
+            #boton-idiomas
+                position: relative
+                left: 18.5%
+                height: 28px
+                width: 98px
+                font-size: 14px
+                margin-top: 2px 
+            #boton-idiomas::before
+                top: 22%
+            #boton-idiomas::after
+                top: 34%
+            #boton-inicio-sesion
+                position: relative
+                height: 27px
+                width: 101px
+                font-size: 14.4px
+                left: 28%
+                margin-top: 2px
+            #netflix-logo
+                width: 88px
+
+        .contenedor-contenido-central
+            padding: 30px 10px
+            max-height: 479px
+            .contenido-central
+
+                h1
+                    font-size: 28px
+
+
+                h3
+                    font-size: 18px
+                    padding: 0 12%
+                    margin: 0
+                    padding: 0 60px
+                h2
+                    font-size: 18px
+                    margin: 16px 0
+                
+                input
+                    margin: 10px 0 15px
+                    width: 425px
+                    height: 45px
+
