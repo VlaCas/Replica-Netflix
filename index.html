@@ -62,12 +62,11 @@
                 </div>
                 
                 <div class="contenedor-animacion">
-                    <div class="contenedor-animacion2">
+                    <div class="contenedor-imagen">
                         <img src="Imagenes/tv.png" alt="Imagen TV">
                         <div class="contenedor-video">
                             <video src="Imagenes/video-tv-0819.m4v" autoplay playsinline muted loop></video>
                         </div>
-                           
                     </div>     
                 </div>       
 
@@ -80,15 +79,20 @@
             
             <div class="contenedor-padre2">
 
-                <div id="contenedor-imagen">
-                    <img src="Imagenes/mobile-0819.jpg" alt="Imagen Movil" width="504.95px">
-                    <div class="fila-descarga">
-                        <img id="imagen-boxshot" src="Imagenes/boxshot.png" alt="Box Shot" width="57px">
-                        <div id="texto-descarga">
-                            <p id="p1">Stranger Things</p>
-                            <p id="p2">Descargando...</p>
+                <div id="contenedor-animacion2">
+                    <div id="contenedor-imagen2"> 
+                        <img src="Imagenes/mobile-0819.jpg" alt="Imagen Movil">
+                        <div id="fila-descarga">
+                            <div id="contenedor-imagen-boxshot"> 
+                                <img id="imagen-boxshot" src="Imagenes/boxshot.png" alt="Box Shot">
+                            </div>
+                            <div id="contenedor-texto-descarga">
+                                <div id="p1">Stranger Things</div>
+                                <div id="p2">Descargando...</div>
+                            </div>
+                            <div id="contenedor-icono-descarga">
+                            </div> 
                         </div>
-                        <img id="icono-descarga" src="Imagenes/download-icon.gif" alt="Icono Descarga" width="48px">    
                     </div>
                 </div>
 
@@ -111,9 +115,13 @@
                     <h2> Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo adicional. </h2>
                 </div>
 
-                <div id="contenedor-video2">        
-                    <video src="Imagenes/video-devices.m4v" autoplay playsinline muted loop width="350px"></video>
-                    <img src="Imagenes/device-pile.png" alt="Imagen Dispositivos" width="555.43px">
+                <div class="contenedor-animacion3">
+                    <div id="contenedor-imagen3">    
+                        <img src="Imagenes/device-pile.png" alt="Imagen Dispositivos"> 
+                        <div class="contenedor-video2">   
+                            <video src="Imagenes/video-devices.m4v" autoplay playsinline muted loop></video> 
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -125,13 +133,15 @@
 
             <div class="contenedor-padre4">
                   
-                <div id="contenedor-imagen2">
-                    <img src="Imagenes/imagen-niños.png" alt="Imagen Niños" width="504.95px">
+                <div class="contenedor-animacion4"> 
+                    <div id="contenedor-imagen4">
+                        <img src="Imagenes/imagen-niños.png" alt="Imagen Niños">
+                    </div>
                 </div>
 
                 <div id="contenedor-texto4">
-                    <h1>Crea perfiles para <br> niños</h1>
-                    <h2>Los niños vivirán aventuras con sus <br> personajes favoritos en un espacio diseñado <br> exclusivamente para ellos, sin costo con tu <br> membresía.</h2>   
+                    <h1>Crea perfiles para niños</h1>
+                    <h2>Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.</h2>   
                 </div>
 
             </div>
@@ -143,15 +153,15 @@
 
             <div class="contenedor-padre5">
 
-                <div id="contenedor-preguntas">
-                    <h1> Preguntas frecuentes </h1>
-                    <button> ¿Qué es Netflix? </button>
-                    <button> ¿Cuánto cuesta Netflix? </button>
-                    <button> ¿Dónde puedo ver Netflix? </button>
-                    <button> ¿Cómo cancelo? </button>
-                    <button> ¿Qué puedo ver en Netflix? </button>
-                    <button> ¿Es bueno Netflix para los niños? </button>
-                </div>
+                <h1> Preguntas frecuentes </h1>
+                <ul id="contenedor-preguntas">
+                    <li><button> ¿Qué es Netflix? <svg viewBox="0 0 26 26" focusable="true"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg></button></li>
+                    <li><button> ¿Cuánto cuesta Netflix? <svg viewBox="0 0 26 26" focusable="true"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg></button></li>
+                    <li><button> ¿Dónde puedo ver Netflix? <svg viewBox="0 0 26 26" focusable="true"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg></button></li>
+                    <li><button> ¿Cómo cancelo? <svg viewBox="0 0 26 26" focusable="true"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg></button></li>
+                    <li><button> ¿Qué puedo ver en Netflix? <svg viewBox="0 0 26 26" focusable="true"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg></button></li>
+                    <li><button> ¿Es bueno Netflix para los niños? <svg viewBox="0 0 26 26" focusable="true"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg></button></li>
+                </ul>
                 <h3> ¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix. </h3>
                 <div id="input-boton2">
                     <input type="text" placeholder="Email">

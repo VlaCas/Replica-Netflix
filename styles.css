@@ -220,21 +220,21 @@
   width: 48.5%;
   height: 100%;
 }
-.segunda-seccion .contenedor-padre .contenedor-animacion .contenedor-animacion2 {
+.segunda-seccion .contenedor-padre .contenedor-animacion .contenedor-imagen {
   position: relative;
   width: 100%;
   margin: -10% -5% -5% 0;
 }
-.segunda-seccion .contenedor-padre .contenedor-animacion .contenedor-animacion2 img {
+.segunda-seccion .contenedor-padre .contenedor-animacion .contenedor-imagen img {
   position: relative;
   border: 0;
   height: auto;
   max-width: 100%;
   overflow-clip-margin: content-box;
   overflow: clip;
-  z-index: 2;
+  z-index: 11;
 }
-.segunda-seccion .contenedor-padre .contenedor-animacion .contenedor-animacion2 .contenedor-video {
+.segunda-seccion .contenedor-padre .contenedor-animacion .contenedor-imagen .contenedor-video {
   height: 100%;
   left: 49.5%;
   max-height: 54.2%;
@@ -244,7 +244,7 @@
   transform: translate(-50%, -50%);
   width: 100%;
 }
-.segunda-seccion .contenedor-padre .contenedor-animacion .contenedor-animacion2 .contenedor-video video {
+.segunda-seccion .contenedor-padre .contenedor-animacion .contenedor-imagen .contenedor-video video {
   position: relative;
   height: 100%;
   width: 100%;
@@ -259,246 +259,311 @@
 
 .tercera-seccion {
   background-color: rgb(0, 0, 0);
-  box-sizing: border-box;
-  width: 100%;
-  height: 100vh;
-  max-height: 465px;
+  color: rgb(255, 255, 255);
   border-bottom: 8px solid #222;
   padding: 70px 45px;
 }
 .tercera-seccion .contenedor-padre2 {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: rgb(0, 0, 0);
-  width: 100%;
-  height: 100%;
-  max-height: 322.12px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
-.tercera-seccion .contenedor-padre2 #contenedor-imagen {
-  position: relative;
-  width: 550px;
-}
-.tercera-seccion .contenedor-padre2 #contenedor-imagen img {
-  position: absolute;
-  top: -36px;
-  left: -76px;
-}
-.tercera-seccion .contenedor-padre2 #contenedor-imagen .fila-descarga {
-  background-color: #000;
+.tercera-seccion .contenedor-padre2 #contenedor-animacion2 {
+  box-sizing: border-box;
   display: flex;
-  flex-direction: row;
-  position: absolute;
-  top: 211px;
-  left: 11px;
-  width: 327px;
-  height: 100px;
+  flex: 0 1 auto;
+  width: 48%;
+  height: 100%;
+}
+.tercera-seccion .contenedor-padre2 #contenedor-animacion2 #contenedor-imagen2 {
+  margin: -8% 0 -4% -15%;
+  min-height: 100px;
+  width: 100%;
+  position: relative;
+}
+.tercera-seccion .contenedor-padre2 #contenedor-animacion2 #contenedor-imagen2 img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.tercera-seccion .contenedor-padre2 #contenedor-animacion2 #contenedor-imagen2 #fila-descarga {
+  align-items: center;
+  background: #000;
   border: 2px solid hsla(0deg, 0%, 100%, 0.25);
-  border-radius: 12px;
+  border-radius: 0.75em;
+  bottom: 8%;
   box-shadow: 0 0 2em 0 #000;
-}
-.tercera-seccion .contenedor-padre2 #contenedor-imagen .fila-descarga #imagen-boxshot {
+  display: flex;
+  left: 50%;
+  margin: 0 auto;
+  min-width: 15em;
+  padding: 0.5em 0.75em;
   position: absolute;
-  top: 0;
-  left: 0;
-  padding: 8px 0 8px 12px;
+  transform: translateX(-50%);
+  width: 60%;
 }
-.tercera-seccion .contenedor-padre2 #contenedor-imagen .fila-descarga #p1 {
+.tercera-seccion .contenedor-padre2 #contenedor-animacion2 #contenedor-imagen2 #fila-descarga #contenedor-imagen-boxshot {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0 1em 0 0;
+}
+.tercera-seccion .contenedor-padre2 #contenedor-animacion2 #contenedor-imagen2 #fila-descarga #contenedor-imagen-boxshot img {
+  border: 0;
+  height: 5em;
+  max-width: 100%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.tercera-seccion .contenedor-padre2 #contenedor-animacion2 #contenedor-imagen2 #fila-descarga #contenedor-texto-descarga {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0.3em 0;
+}
+.tercera-seccion .contenedor-padre2 #contenedor-animacion2 #contenedor-imagen2 #fila-descarga #contenedor-texto-descarga #p1 {
   font-family: NetflixSansMedium;
-  color: rgb(255, 255, 255);
-  font-style: 16px;
-  font-weight: normal;
+  font-size: 1em;
+  font-weight: 500;
 }
-.tercera-seccion .contenedor-padre2 #contenedor-imagen .fila-descarga #p2 {
+.tercera-seccion .contenedor-padre2 #contenedor-animacion2 #contenedor-imagen2 #fila-descarga #contenedor-texto-descarga #p2 {
   font-family: NetflixSansRegular;
   color: rgb(0, 113, 235);
-  font-size: 14px;
-  font-weight: normal;
+  font-size: 0.9em;
+  font-weight: 400;
 }
-.tercera-seccion .contenedor-padre2 #contenedor-imagen .fila-descarga #texto-descarga {
+.tercera-seccion .contenedor-padre2 #contenedor-animacion2 #contenedor-imagen2 #fila-descarga #contenedor-texto-descarga #texto-descarga {
   position: absolute;
   top: 30px;
   left: 85px;
 }
-.tercera-seccion .contenedor-padre2 #contenedor-imagen .fila-descarga #icono-descarga {
-  position: absolute;
-  top: 25px;
-  left: 267px;
+.tercera-seccion .contenedor-padre2 #contenedor-animacion2 #contenedor-imagen2 #fila-descarga #contenedor-icono-descarga {
+  background: url(Imagenes/download-icon.gif) 50% no-repeat;
+  background-size: 100%;
+  content: "";
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 3em;
+  outline: 2px solid #000;
+  outline-offset: -2px;
+  width: 3em;
 }
 .tercera-seccion .contenedor-padre2 #contenedor-texto2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 550px;
+  flex: 0 1 auto;
+  width: 52%;
+  height: 100%;
+  padding: 0 0 0 3rem;
 }
 .tercera-seccion .contenedor-padre2 #contenedor-texto2 h1 {
-  color: rgb(255, 255, 255);
   font-family: NetflixSansMedium;
-  align-self: start;
-  font-size: 50px;
-  font-weight: normal;
-  line-height: 55px;
-  margin-bottom: 6px;
-  padding-left: 2px;
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
 }
 .tercera-seccion .contenedor-padre2 #contenedor-texto2 h2 {
   font-family: NetflixSansRegular;
-  color: rgb(255, 255, 255);
-  align-self: start;
-  font-size: 26px;
-  font-weight: normal;
-  margin: 15px 0 6.5px 0;
-  padding-left: 2px;
+  font-size: 1.625rem;
+  font-weight: 400;
+  margin: 0.75em 0 0.25em;
 }
 
 .cuarta-seccion {
   background-color: rgb(0, 0, 0);
-  box-sizing: border-box;
-  width: 100%;
-  height: 100vh;
-  max-height: 538px;
+  color: rgb(255, 255, 255);
   border-bottom: 8px solid #222;
   padding: 70px 45px;
 }
 .cuarta-seccion .contenedor-padre3 {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: rgb(0, 0, 0);
-  width: 100%;
-  height: 100%;
-  max-height: 395px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 .cuarta-seccion .contenedor-padre3 #contenedor-texto3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  max-width: 550px;
+  flex: 0 1 auto;
+  width: 51.5%;
+  height: 100%;
+  padding: 0 3rem 0 0;
 }
 .cuarta-seccion .contenedor-padre3 #contenedor-texto3 h1 {
-  color: rgb(255, 255, 255);
   font-family: NetflixSansMedium;
-  font-size: 50px;
-  font-weight: normal;
-  line-height: 53px;
-  margin-bottom: 6px;
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
 }
 .cuarta-seccion .contenedor-padre3 #contenedor-texto3 h2 {
   font-family: NetflixSansRegular;
-  color: rgb(255, 255, 255);
-  font-size: 26px;
-  font-weight: normal;
-  margin: 15px 0 6.5px 0;
+  font-size: 1.625rem;
+  font-weight: 400;
+  margin: 0.75em 0 0.25em;
 }
-.cuarta-seccion .contenedor-padre3 #contenedor-video2 {
+.cuarta-seccion .contenedor-padre3 .contenedor-animacion3 {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  width: 48.5%;
+  height: 100%;
+}
+.cuarta-seccion .contenedor-padre3 .contenedor-animacion3 #contenedor-imagen3 {
   position: relative;
   width: 100%;
-  max-width: 550px;
+  margin: -5% -10% 0 0;
 }
-.cuarta-seccion .contenedor-padre3 #contenedor-video2 video {
-  position: absolute;
-  top: 22px;
-  left: 140px;
+.cuarta-seccion .contenedor-padre3 .contenedor-animacion3 #contenedor-imagen3 img {
+  position: relative;
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  z-index: 11;
 }
-.cuarta-seccion .contenedor-padre3 #contenedor-video2 img {
+.cuarta-seccion .contenedor-padre3 .contenedor-animacion3 #contenedor-imagen3 .contenedor-video2 {
+  height: 100%;
+  left: 50%;
+  max-height: 47%;
+  max-width: 63%;
   position: absolute;
-  top: -25px;
-  left: 45px;
+  top: 34%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.cuarta-seccion .contenedor-padre3 .contenedor-animacion3 #contenedor-imagen3 .contenedor-video2 video {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  vertical-align: baseline;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  z-index: 1;
 }
 
 .quinta-seccion {
   background-color: rgb(0, 0, 0);
-  box-sizing: border-box;
-  width: 100%;
-  height: 100vh;
-  max-height: 530px;
+  color: rgb(255, 255, 255);
   border-bottom: 8px solid #222;
   padding: 70px 45px;
 }
 .quinta-seccion .contenedor-padre4 {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: rgb(0, 0, 0);
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.quinta-seccion .contenedor-padre4 .contenedor-animacion4 {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  width: 48%;
   height: 100%;
 }
-.quinta-seccion .contenedor-padre4 #contenedor-imagen2 {
-  position: relative;
-  width: 50%;
-  max-width: 505px;
-  margin-left: auto;
-}
-.quinta-seccion .contenedor-padre4 #contenedor-imagen2 img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.quinta-seccion .contenedor-padre4 .contenedor-animacion4 #contenedor-imagen4 {
+  min-height: 100px;
   width: 100%;
+  position: relative;
+}
+.quinta-seccion .contenedor-padre4 .contenedor-animacion4 #contenedor-imagen4 img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 .quinta-seccion .contenedor-padre4 #contenedor-texto4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-  max-width: 550px;
-  margin-right: auto;
-  padding-left: 47px;
+  flex: 0 1 auto;
+  width: 52%;
+  height: 100%;
+  padding: 0 0 0 3rem;
 }
 .quinta-seccion .contenedor-padre4 #contenedor-texto4 h1 {
-  color: rgb(255, 255, 255);
   font-family: NetflixSansMedium;
-  align-self: flex-start;
-  font-size: 50px;
-  font-weight: normal;
-  line-height: 55px;
-  padding: 0 0 4px 2px;
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
 }
 .quinta-seccion .contenedor-padre4 #contenedor-texto4 h2 {
   font-family: NetflixSansRegular;
-  color: rgb(255, 255, 255);
-  align-self: flex-start;
-  font-size: 26px;
-  font-weight: normal;
-  margin: 17px 0 6.5px 0;
-  padding-left: 2px;
+  font-size: 1.625rem;
+  font-weight: 400;
+  margin: 0.75em 0 0.25em;
 }
 
 .sexta-seccion {
   background-color: rgb(0, 0, 0);
-  width: 100%;
-  height: 930.12px;
-  border-bottom: 8px solid #222;
-}
-.sexta-seccion .contenedor-padre5 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 45px;
-}
-.sexta-seccion .contenedor-padre5 h1 {
   color: rgb(255, 255, 255);
-  font-family: NetflixSansMedium;
-  font-size: 50px;
-  font-weight: normal;
-  line-height: 1.1;
-  margin: 20px 0 50px 0;
+  border-bottom: 8px solid #222;
+  padding: 70px 45px;
+  margin-bottom: 0;
+  position: relative;
   text-align: center;
 }
-.sexta-seccion .contenedor-padre5 button {
-  display: block;
-  background-color: rgb(48, 48, 48);
-  color: rgb(255, 255, 255);
+.sexta-seccion .contenedor-padre5 {
+  font-size: 1.625rem;
+  font-weight: 400;
+  text-align: center;
+}
+.sexta-seccion .contenedor-padre5 h1 {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin: 0 0 0.4em;
+  font-family: NetflixSansMedium;
+  font-weight: 500;
+  text-align: center;
+}
+.sexta-seccion .contenedor-padre5 #contenedor-preguntas {
+  margin: 2em auto;
+  width: 75%;
+  max-width: 815px;
+  list-style-type: disc;
+  font-size: 1.625rem;
+  font-weight: 400;
+  text-align: center;
+}
+.sexta-seccion .contenedor-padre5 #contenedor-preguntas li {
+  list-style-type: none;
+  margin: 0 0 9px;
+  font-size: 1.625rem;
+  font-weight: 400;
+  text-align: center;
+}
+.sexta-seccion .contenedor-padre5 #contenedor-preguntas button {
   font-family: NetflixSansRegular;
-  font-size: 26px;
-  font-weight: normal;
+  box-sizing: border-box;
+  border: 0;
+  font-weight: 400;
+  font-size: 1.625rem;
+  margin-bottom: 1px;
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  position: relative;
+  width: 100%;
+  background-color: rgb(48, 48, 48);
+  display: block;
+  text-align: left;
   cursor: pointer;
-  padding: 21px 30.8px;
-  width: 819px;
-  text-align: start;
-  margin-bottom: 9px;
-  border: none;
+  text-transform: none;
+  overflow: visible;
+  color: rgb(255, 255, 255);
+}
+.sexta-seccion .contenedor-padre5 #contenedor-preguntas svg {
+  fill: #fff;
+  height: 1em;
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  width: 1em;
+  transform: translateY(-50%) rotate(-45deg);
+  font-weight: 400;
 }
 .sexta-seccion .contenedor-padre5 h3 {
   color: rgb(255, 255, 255);
@@ -510,21 +575,24 @@
   margin-top: 60px;
 }
 .sexta-seccion .contenedor-padre5 #input-boton2 {
+  margin: 0 auto;
+  max-width: 950px;
+  padding-top: 0.85rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
-.sexta-seccion .contenedor-padre5 input {
+.sexta-seccion .contenedor-padre5 #input-boton2 input {
   font-family: NetflixSansRegular;
   width: 487px;
   height: 66px;
   font-size: 16px;
   padding-left: 10px;
 }
-.sexta-seccion .contenedor-padre5 input:focus {
+.sexta-seccion .contenedor-padre5 #input-boton2 input:focus {
   outline: none;
   border: 1.8px solid #1c62b9;
 }
-.sexta-seccion .contenedor-padre5 #boton1 {
+.sexta-seccion .contenedor-padre5 #input-boton2 #boton1 {
   font-family: NetflixSansRegular;
   background-color: rgb(229, 9, 20);
   color: rgb(255, 255, 255);
@@ -534,7 +602,7 @@
   font-size: 30px;
   line-height: 0.5;
 }
-.sexta-seccion .contenedor-padre5 #boton1 :hover {
+.sexta-seccion .contenedor-padre5 #input-boton2 #boton1 :hover {
   background-color: rgb(244, 6, 18);
   cursor: pointer;
 }
