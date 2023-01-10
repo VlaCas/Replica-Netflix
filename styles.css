@@ -566,25 +566,25 @@
   font-weight: 400;
 }
 .sexta-seccion .contenedor-padre5 h3 {
+  font-size: 1.2rem;
+  max-width: none;
+  padding-bottom: 20px;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 0 5%;
   color: rgb(255, 255, 255);
   font-family: NetflixSansRegular;
-  font-size: 19.2px;
-  font-weight: normal;
   text-align: center;
-  padding-bottom: 20px;
-  margin-top: 60px;
 }
 .sexta-seccion .contenedor-padre5 #input-boton2 {
   margin: 0 auto;
   max-width: 950px;
   padding-top: 0.85rem;
   display: flex;
-  flex-direction: column;
 }
 .sexta-seccion .contenedor-padre5 #input-boton2 input {
   font-family: NetflixSansRegular;
-  width: 487px;
-  height: 66px;
+  max-width: 487px;
   font-size: 16px;
   padding-left: 10px;
 }
