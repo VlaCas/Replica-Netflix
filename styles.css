@@ -565,7 +565,15 @@
   transform: translateY(-50%) rotate(-45deg);
   font-weight: 400;
 }
-.sexta-seccion .contenedor-padre5 h3 {
+.sexta-seccion .contenedor-padre5 #contenedor-h3-input {
+  max-width: 950px;
+  padding-top: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+}
+.sexta-seccion .contenedor-padre5 #contenedor-h3-input h3 {
   font-size: 1.2rem;
   max-width: none;
   padding-bottom: 20px;
@@ -576,33 +584,37 @@
   font-family: NetflixSansRegular;
   text-align: center;
 }
-.sexta-seccion .contenedor-padre5 #input-boton2 {
+.sexta-seccion .contenedor-padre5 #contenedor-h3-input #input-boton2 {
+  width: 100%;
   margin: 0 auto;
-  max-width: 950px;
-  padding-top: 0.85rem;
+  margin-bottom: 10px;
+  padding-top: 1.35rem;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.sexta-seccion .contenedor-padre5 #input-boton2 input {
+.sexta-seccion .contenedor-padre5 #contenedor-h3-input #input-boton2 input {
   font-family: NetflixSansRegular;
-  max-width: 487px;
+  width: 51.25%;
+  height: 66px;
   font-size: 16px;
   padding-left: 10px;
 }
-.sexta-seccion .contenedor-padre5 #input-boton2 input:focus {
+.sexta-seccion .contenedor-padre5 #contenedor-h3-input #input-boton2 input:focus {
   outline: none;
   border: 1.8px solid #1c62b9;
 }
-.sexta-seccion .contenedor-padre5 #input-boton2 #boton1 {
+.sexta-seccion .contenedor-padre5 #contenedor-h3-input #input-boton2 #boton1 {
   font-family: NetflixSansRegular;
   background-color: rgb(229, 9, 20);
   color: rgb(255, 255, 255);
   border: none;
-  width: 228px;
-  height: 70px;
+  min-width: 24%;
+  height: auto;
   font-size: 30px;
   line-height: 0.5;
 }
-.sexta-seccion .contenedor-padre5 #input-boton2 #boton1 :hover {
+.sexta-seccion .contenedor-padre5 #contenedor-h3-input #input-boton2 #boton1 :hover {
   background-color: rgb(244, 6, 18);
   cursor: pointer;
 }
@@ -732,6 +744,15 @@
     height: 61px;
     font-size: 26px;
   }
+  .sexta-seccion .contenedor-padre5 #contenedor-h3-input #input-boton2 input {
+    width: 45.95%;
+    height: 56px;
+  }
+  .sexta-seccion .contenedor-padre5 #contenedor-h3-input #input-boton2 #boton1 {
+    width: 20.5%;
+    height: 60px;
+    font-size: 26px;
+  }
 }
 @media only screen and (max-width: 1052px) {
   .primera-seccion .contenedor-contenido-central {
@@ -778,6 +799,40 @@
     height: 41px;
     font-size: 16px;
   }
+  .sexta-seccion .contenedor-padre5 h1 {
+    font-size: 40px;
+  }
+  .sexta-seccion .contenedor-padre5 #contenedor-preguntas {
+    width: 90%;
+    max-width: 815px;
+    margin: 1.15em auto;
+  }
+  .sexta-seccion .contenedor-padre5 #contenedor-preguntas button {
+    font-size: 1.25rem;
+  }
+  .sexta-seccion .contenedor-padre5 #contenedor-h3-input {
+    padding-top: 0.07rem;
+  }
+  .sexta-seccion .contenedor-padre5 #contenedor-h3-input h3 {
+    font-size: 23px;
+    max-width: 450px;
+    padding: 0 10%;
+  }
+  .sexta-seccion .contenedor-padre5 #contenedor-h3-input #input-boton2 {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.57rem;
+  }
+  .sexta-seccion .contenedor-padre5 #contenedor-h3-input #input-boton2 input {
+    min-width: 485px;
+    height: 56px;
+  }
+  .sexta-seccion .contenedor-padre5 #contenedor-h3-input #input-boton2 #boton1 {
+    width: 50px;
+    height: 40px;
+    font-size: 1rem;
+    margin-top: 14px;
+  }
 }
 @media only screen and (max-width: 739px) {
   .primera-seccion .contenedor-contenido-central {
@@ -794,10 +849,27 @@
     width: 488px;
     height: 44px;
   }
+  .sexta-seccion .contenedor-padre5 #contenedor-h3-input h3 {
+    font-size: 18px;
+  }
+  .sexta-seccion .contenedor-padre5 #contenedor-h3-input #input-boton2 input {
+    width: 50%;
+    height: 45px;
+  }
 }
 @media only screen and (max-width: 679px) {
   .primera-seccion .contenedor-contenido-central {
     max-height: 669px;
+  }
+  .sexta-seccion .contenedor-padre5 #contenedor-h3-input #input-boton2 input {
+    width: 50.95%;
+    height: 56px;
+  }
+  .sexta-seccion .contenedor-padre5 #contenedor-h3-input #input-boton2 #boton1 {
+    width: 20.5%;
+    min-width: 20%;
+    height: 60px;
+    font-size: 26px;
   }
 }
 @media only screen and (max-width: 646px) {
@@ -861,5 +933,15 @@
     margin: 10px 0 15px;
     width: 425px;
     height: 45px;
+  }
+  .sexta-seccion .contenedor-padre5 #contenedor-h3-input h3 {
+    font-size: 18px;
+  }
+  .sexta-seccion .contenedor-padre5 #contenedor-h3-input #input-boton2 input {
+    width: 46%;
+    height: 45px;
+  }
+  .sexta-seccion .contenedor-padre5 #contenedor-h3-input #input-boton2 #boton1 {
+    min-width: 18%;
   }
 }/*# sourceMappingURL=styles.css.map */
